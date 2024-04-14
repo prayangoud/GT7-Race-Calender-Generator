@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Configuration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"], input[type="range"] {
+            width: 300px;
+            padding: 8px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Race Configuration for Gran Turismo 7</h1>
+    <form>
+        <div class="form-group">
+            <label for="numRaces">Number of Races:</label>
+            <input type="text" id="numRaces" name="numRaces">
+        </div>
+
+        <div class="form-group">
+            <label for="raceFormat">Race Format:</label>
+            <select id="raceFormat" name="raceFormat">
+                <option value="90km">90km</option>
+                <option value="100km">100km</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="powerPoints">Power Points:</label>
+            <input type="text" id="powerPoints" name="powerPoints">
+        </div>
+
+        <div class="form-group">
+            <label for="balancePower">Balance of Power:</label>
+            <select id="balancePower" name="balancePower">
+                <option value="on">On</option>
+                <option value="off">Off</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="carType">Type of Car:</label>
+            <select id="carType" name="carType">
+                <option value="gr4">Gr.4</option>
+                <option value="gr3">Gr.3</option>
+                <option value="gr2">Gr.2</option>
+                <option value="gr1">Gr.1</option>
+                <option value="grB">Gr.B</option>
+                <option value="vgt">VGT</option>
+                <option value="road">Road</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tyreType">Tyre Type:</label>
+            <select id="tyreType" name="tyreType">
+                <option value="comfort">Comfort</option>
+                <option value="sports">Sports</option>
+                <option value="racing">Racing</option>
+                <option value="wet">Wet</option>
+                <option value="dirt">Dirt</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fuelWear">Fuel Wear (1-50):</label>
+            <input type="range" id="fuelWear" name="fuelWear" min="1" max="50" value="25">
+            <span id="fuelWearValue">25</span>
+        </div>
+
+        <div class="form-group">
+            <label for="tireWear">Tire Wear (1-50):</label>
+            <input type="range" id="tireWear" name="tireWear" min="1" max="50" value="25">
+            <span id="tireWearValue">25</span>
+        </div>
+
+        <div class="form-group">
+            <label for="modifiedCars">Allow Modified Cars:</label>
+            <input type="checkbox" id="modifiedCars" name="modifiedCars" value="yes">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript for updating the display value next to sliders
+        document.getElementById('fuelWear').oninput = function() {
+            document.getElementById('fuelWearValue').textContent = this.value;
+        }
+        document.getElementById('tireWear').oninput = function() {
+            document.getElementById('tireWearValue').textContent = this.value;
+        }
+    </script>
+</body>
+</html>
