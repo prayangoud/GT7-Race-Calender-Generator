@@ -33,7 +33,7 @@
     <form>
         <div class="form-group">
             <label for="numRaces">Number of Races:</label>
-            <input type="range" id="numRaces" name="numRaces" min="1" max="10" value="3">
+            <input type="range" id="numRaces" name="numRaces" min="1" max="82" value="3">
             <span id="numRacesValue">3</span>
         </div>
 
@@ -51,25 +51,22 @@
         </div>
 
         <div class="form-group">
-            <label for="balancePower">Balance of Power:</label>
-            <select id="balancePower" name="balancePower">
-                <option value="on">On</option>
-                <option value="off">Off</option>
-            </select>
+            <label for="balancePowerBtn">Balance of Power:</label>
+            <button id="balancePowerBtn" class="power-button off">OFF</button>
         </div>
 
         <div class="form-group">
             <label for="carType">Type of Car:</label>
-            <select id="carType" name="carType">
-                <option value="gr4">Gr.4</option>
-                <option value="gr3">Gr.3</option>
-                <option value="gr2">Gr.2</option>
-                <option value="gr1">Gr.1</option>
-                <option value="grB">Gr.B</option>
-                <option value="vgt">VGT</option>
-                <option value="road">Road</option>
-                <option value="all">All</option>
-            </select>
+            <div id="carType">
+                <button class="car-button" type="button" data-car-type="Gr.4">Gr.4</button>
+                <button class="car-button" type="button" data-car-type="Gr.3">Gr.3</button>
+                <button class="car-button" type="button" data-car-type="Gr.2">Gr.2</button>
+                <button class="car-button" type="button" data-car-type="Gr.1">Gr.1</button>
+                <button class="car-button" type="button" data-car-type="Gr.B">Gr.B</button>
+                <button class="car-button" type="button" data-car-type="VGT">VGT</button>
+                <button class="car-button" type="button" data-car-type="Road">Road</button>
+                <button class="car-button" type="button" data-car-type="All">All</button>
+            </div>
         </div>
 
         <div class="form-group">
@@ -114,6 +111,25 @@
         document.getElementById('numRaces').oninput = function() {
             document.getElementById('numRacesValue').textContent = this.value;
         }
+        const balancePowerBtn = document.getElementById('balancePowerBtn');
+        balancePowerBtn.addEventListener('click', function() {
+            this.classList.toggle('on');
+            this.classList.toggle('off');
+            if (this.classList.contains('on')) {
+                this.textContent = 'ON';
+            } else {
+                this.textContent = 'OFF';
+            }
+        });
+        const carButtons = document.querySelectorAll('.car-button');
+        carButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                carButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to the clicked button
+                this.classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
