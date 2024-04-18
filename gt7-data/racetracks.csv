@@ -1,0 +1,99 @@
+region,country,course_name,layout,track_type,length_meters,reversible,rain_compatible
+Europe,France,24 Heures du Mans Racing Circuit,Full Course,real,13629,FALSE,TRUE
+Europe,France,24 Heures du Mans Racing Circuit,No Chicane,real,13567,FALSE,TRUE
+Europe,France,Alsace,Village,original,5423,TRUE,FALSE
+Europe,France,Alsace,Test Course,original,2118,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,Full Course,original,5809,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,Centre,original,1706,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,East End,original,2010,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,West End,original,2444,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,East,original,3643,TRUE,FALSE
+Europe,Italy,Autodrome Lago Maggiore,West,original,4168,TRUE,FALSE
+Americas,Brazil,Autódromo de Interlagos,Full Course,real,4309,FALSE,FALSE
+Europe,Italy,Autodromo Nazionale Monza,Full Course,real,5793,FALSE,FALSE
+Europe,Italy,Autodromo Nazionale Monza,No Chicane,real,5755,FALSE,FALSE
+Asia-Oceania,Japan,Autopolis International Racing Course,Full Course,real,4674,FALSE,TRUE
+Asia-Oceania,Japan,Autopolis International Racing Course,Shortcut Course,real,3022,FALSE,TRUE
+Americas,USA,Blue Moon Bay Speedway,Full Course,original,3200,TRUE,FALSE
+Americas,USA,Blue Moon Bay Speedway,Infield A,original,3350,TRUE,FALSE
+Americas,USA,Blue Moon Bay Speedway,Infield B,original,2860,TRUE,FALSE
+Europe,UK,Brands Hatch,Grand Prix Circuit,real,3946,FALSE,FALSE
+Europe,UK,Brands Hatch,Indy Circuit,real,1944,FALSE,FALSE
+"Asia-Oceania
+","Japan
+",Broad Bean Raceway,Full Course,original,1665,TRUE,FALSE
+Europe,Spain,Circuit de Barcelona-Catalunya,Grand Prix Layout,real,4655,FALSE,FALSE
+Europe,Spain,Circuit de Barcelona-Catalunya,Grand Prix Layout No Chicane,real,4730,FALSE,FALSE
+Europe,Spain,Circuit de Barcelona-Catalunya,National Layout,real,2977,FALSE,FALSE
+Europe,Spain,Circuit de Barcelona-Catalunya,Rallycross Layout,dirt,1133,FALSE,FALSE
+Europe,France,Circuit de Sainte-Croix,Layout A,original,9477,TRUE,FALSE
+Europe,France,Circuit de Sainte-Croix,Layout B,original,7062,TRUE,FALSE
+Europe,France,Circuit de Sainte-Croix,Layout C,original,10825,TRUE,FALSE
+Europe,Belgium,Circuit de Spa-Francorchamps,Full Course,real,7044,FALSE,TRUE
+Europe,Belgium,Circuit de Spa-Francorchamps,24h Layout,real,7044,FALSE,TRUE
+Americas,USA,Colorado Springs,Lake,dirt,2990,TRUE,FALSE
+Americas,USA,Daytona International Speedway,Tri-Oval,real,4023,FALSE,FALSE
+Americas,USA,Daytona International Speedway,Road Course,real,5729,FALSE,FALSE
+Europe,Switzerland,Deep Forest Raceway,Full Course,original,4253,TRUE,FALSE
+Europe,Croatia,Dragon Trail,Seaside,original,5209,TRUE,FALSE
+Europe,Croatia,Dragon Trail,Gardens,original,4352,TRUE,TRUE
+Americas,USA,Fishermans Ranch,Full Course,dirt,6893,TRUE,FALSE
+Asia-Oceania,"Japan
+",Fuji International Speedway,Full Course,real,4563,FALSE,TRUE
+Asia-Oceania,"Japan
+",Fuji International Speedway,Short Course,real,4526,FALSE,TRUE
+Europe,UK,Goodwood Motor Circuit,Full Course,real,3809,FALSE,FALSE
+Americas,USA,Grand Valley,Highway 1,original,5099,TRUE,FALSE
+Americas,USA,Grand Valley,South,original,3076,TRUE,FALSE
+Asia-Oceania,"Japan
+",High Speed Ring,Full Course,original,4345,TRUE,TRUE
+Asia-Oceania,"Japan
+",Kyoto Driving Park,Yamagiwa,original,4912,TRUE,FALSE
+Asia-Oceania,"Japan
+",Kyoto Driving Park,Miyabi,original,1953,FALSE,FALSE
+Asia-Oceania,"Japan
+",Kyoto Driving Park,Yamagiwa + Miyabi,original,6846,TRUE,FALSE
+Americas,Canada,Lake Louise,Tri-Oval,snow,3068,TRUE,FALSE
+Americas,Canada,Lake Louise,Short Track,snow,2577,TRUE,FALSE
+Americas,Canada,Lake Louise,Long Track,snow,3694,TRUE,FALSE
+Americas,USA,Michelin Raceway Road Atlanta,Full Course,real,4088,FALSE,FALSE
+Asia-Oceania,Australia,Mount Panorama Circuit,Full Course,real,6213,FALSE,FALSE
+Americas,USA,Northern Isle Speedway,Full Course,original,900,FALSE,FALSE
+Europe,Germany,Nürburgring,Nordschleife,real,20832,FALSE,TRUE
+Europe,Germany,Nürburgring,Nordschleife Tourist,real,20832,FALSE,TRUE
+Europe,Germany,Nürburgring,24h,real,25378,FALSE,TRUE
+Europe,Germany,Nürburgring,Grand Prix,real,5148,FALSE,TRUE
+Europe,Germany,Nürburgring,Endurance,real,23864,FALSE,TRUE
+Europe,Germany,Nürburgring,Sprint,real,3629,FALSE,TRUE
+Europe,Austria,Red Bull Ring,Full Course,real,4318,FALSE,TRUE
+Europe,Austria,Red Bull Ring,Short Track,real,2336,FALSE,TRUE
+Europe,Italy,Sardegna - Road Track,Layout A,original,5113,TRUE,FALSE
+Europe,Italy,Sardegna - Road Track,Layout B,original,3893,TRUE,FALSE
+Europe,Italy,Sardegna - Road Track,Layout C,original,2661,TRUE,FALSE
+Europe,Italy,Sardegna - Windmills,Full Course,dirt,3310,TRUE,FALSE
+Americas,USA,Special Stage Route X,Full Course,original,30283,FALSE,FALSE
+Asia-Oceania,"Japan
+",Suzuka Circuit,Full Course,real,5807,FALSE,TRUE
+Asia-Oceania,"Japan
+",Suzuka Circuit,East Course,real,2243,FALSE,TRUE
+Asia-Oceania,"Japan
+",Tokyo Expressway,Central Clockwise,city,4405,FALSE,TRUE
+Asia-Oceania,"Japan
+",Tokyo Expressway,East Clockwise,city,7301,FALSE,TRUE
+Asia-Oceania,"Japan
+",Tokyo Expressway,South Clockwise,city,5201,FALSE,FALSE
+Asia-Oceania,"Japan
+",Tokyo Expressway,Central Counterclockwise,city,4369,FALSE,TRUE
+Asia-Oceania,"Japan
+",Tokyo Expressway,East Counterclockwise,city,7192,FALSE,TRUE
+Asia-Oceania,"Japan
+",Tokyo Expressway,South Counterclockwise,city,6560,FALSE,FALSE
+Americas,USA,Trial Mountain Circuit,Full Course,original,5434,TRUE,FALSE
+Asian-Oceania,"Japan
+",Tsukuba Circuit,Full Course,real,2045,FALSE,TRUE
+Americas,USA,Watkins Glen International,Long Course,real,5423,FALSE,FALSE
+Americas,USA,Watkins Glen International,Short Course,real,3942,FALSE,FALSE
+Americas,USA,WeatherTech Raceway Laguna Seca,Full Course,real,3602,FALSE,FALSE
+Americas,USA,Willow Springs International Raceway,Big Willow,real,3951,FALSE,FALSE
+Americas,USA,Willow Springs International Raceway,Streets of Willow Springs,real,2675,TRUE,FALSE
+Americas,USA,Willow Springs International Raceway,Horse Thief Mile,real,1624,TRUE,FALSE
