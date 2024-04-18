@@ -13,7 +13,7 @@ def lambda_handler(event,context):
         
         with connection.cursor(pymysql.cursors.DictCursor) as cursor:
             # retrieve number of laps and tracks wanted
-            numOfTracks = int(event['numOfTracks'])
+            numOfTracks = int(event['numRaces'])
             raceFormat = int(event['raceFormat'])  
             
             # query to get course name, layout, and length(to figure laps)
@@ -21,7 +21,7 @@ def lambda_handler(event,context):
             cursor.execute(track_query, (numOfTracks,)) 
             results = cursor.fetchall()
             
-            # for each track, figure out number of laps and attach it to the list for each track 
+            # for each track, figure out number of laps and attach it to the dictionary for each track 
             for result in results:
                 numOfLaps = math.ceil(raceFormat/ result['length_meters'])
                 result['num_of_laps'] = numOfLaps
