@@ -40,7 +40,7 @@ document.getElementById('raceConfigForm').addEventListener('submit', function(ev
         jsonObject[key] = value;
     }
 
-    fetch('https://qqhsb62kdb.execute-api.us-east-1.amazonaws.com/dev', {
+    fetch('https://axdr7i5doe.execute-api.us-east-1.amazonaws.com/dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
