@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Race Configuration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="raceConfigForm">
+    <label for="numRaces">Number of Races:</label>
+    <input type="range" id="numRaces" name="numRaces" min="1" max="81" value="1" oninput="updateOutput(this.value, 'numRacesOutput')">
+    <span id="numRacesOutput">1</span><br>
+<div>
+      <label for="race-format">Race Format:</label>
+     <button type="button" class="race-format" onclick="selectOption(this, 'race-format')">90km</button>
+    <button type="button" class="race-format" onclick="selectOption(this, 'race-format')">100km</button><br> 
+</div>
+
+
+    <label for="powerPoints">Power Points:</label>
+    <input type="text" id="powerPoints" name="powerPoints"><br>
+
+<div>
+    <button type="button" id="bop" onclick="toggleButton(this)">BoP</button><br>  
+</div>
+
+<input type="hidden" id="selectedCarType" name="carType" value="">
+<input type="hidden" id="selectedTireType" name="tireType" value="">
+<input type="hidden" id="raceFormat" name="raceFormat" value="">
+<input type="hidden" id="balanceOfPower" name="balanceOfPower" value="Off">
+
+    <div>Car Type:</div>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.4</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.3</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.2</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.1</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.B</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">VGT</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Road</button>
+    <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">All</button>
+
+
+    <div>Tire Type:</div>
+    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Comfort</button>
+    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Sport</button>
+    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Racing</button>
+    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Wet</button>
+    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Dirt</button>
+
+
+
+    <div>
+      <label for="fuelWear">Fuel Wear:</label>
+    <input type="range" id="fuelWear" name="fuelWear" min="1" max="50" value="1" oninput="updateOutput(this.value, 'fuelWearOutput')">
+    <span id="fuelWearOutput">1x</span><br>
+</div>
+<div>
+     <label for="tireWear">Tire Wear:</label>
+    <input type="range" id="tireWear" name="tireWear" min="1" max="50" value="1" oninput="updateOutput(this.value, 'tireWearOutput')">
+    <span id="tireWearOutput">1x</span><br> 
+</div>
+
+<div>
+      <label for="modCars">Allow Modified Cars:</label>
+    <input type="checkbox" id="modCars" name="modCars"><br>
+</div>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
