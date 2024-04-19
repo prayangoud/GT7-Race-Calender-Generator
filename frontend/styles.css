@@ -20,6 +20,12 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
 }
 
+.form-row {
+    display: flex;
+    align-items: center; /* Vertically centers the checkbox and label text */
+    margin: 10px 0; /* Adds some margin for spacing between form rows */
+}
+
 button {
     padding: 8px 16px;
     margin: 5px;
