@@ -39,7 +39,7 @@ button.active {
     color: white;
 }
 
-input[type="range"], input[type="text"], input[type="checkbox"] {
+input[type="range"] {
     width: calc(100%-10px); /* Ensures full width inside the container */
     padding: 8px;
     margin: 5px;
