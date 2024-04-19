@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('frontend/website-background.webp'); /* Path to your image */
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/website-background.webp'); /* Path to your image */
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the image */
