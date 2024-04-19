@@ -65,3 +65,38 @@ label, input[type="checkbox"] {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.tire-type-comfort {
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/comforttire.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tire-type-sport {
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/sporttire.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tire-type-racing {
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/racetire.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tire-type-wet {
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/wettire.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tire-type-dirt {
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/dirttire.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
