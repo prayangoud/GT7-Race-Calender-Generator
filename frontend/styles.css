@@ -51,3 +51,9 @@ input[type="text"], input[type="checkbox"] {
     padding: 8px;
     margin: 5px;
 }
+
+label, input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle; /* Ensures that elements are aligned in the middle relative to each other */
+    margin-right: 5px; /* Space between the label and the checkbox */
+}
