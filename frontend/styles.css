@@ -1,12 +1,23 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/website-background.webp'); /* Path to your image */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    height: 100vh; /* Full height */
-    margin: 0; /* Remove default margin */
+    background-image: url('https://gt7-generator-pictures.s3.amazonaws.com/website-pictures/website-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex; /* Use flexbox to center the form */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
 }
 
 button {
@@ -22,11 +33,12 @@ button.active {
     color: white;
 }
 
-input[type="range"] {
-    width: 100%;
+input[type="range"], input[type="text"], input[type="checkbox"] {
+    width: 100%; /* Ensures full width inside the container */
+    padding: 8px;
+    margin: 5px;
 }
 
 input[type="text"], input[type="checkbox"] {
-    padding: 8px;
-    margin: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
