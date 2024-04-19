@@ -34,11 +34,14 @@ button.active {
 }
 
 input[type="range"], input[type="text"], input[type="checkbox"] {
-    width: 100%; /* Ensures full width inside the container */
+    width: calc(100%-20px); /* Ensures full width inside the container */
     padding: 8px;
     margin: 5px;
 }
 
 input[type="text"], input[type="checkbox"] {
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box; /* Content, padding and border are included in the width */
+    width: 100%; /* Ensures full width inside the container */
+    padding: 8px;
+    margin: 5px;
 }
