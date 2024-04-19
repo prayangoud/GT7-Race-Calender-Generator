@@ -32,6 +32,7 @@
 <input type="hidden" id="balanceOfPower" name="balanceOfPower" value="Off">
 
     <div>Car Type:</div>
+    <div>
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.4</button>
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.3</button>
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Gr.2</button>
@@ -40,24 +41,27 @@
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">VGT</button>
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">Road</button>
     <button type="button" class="car-type" onclick="selectOption(this, 'car-type')">All</button>
-
+    </div>
 
     <div>Tire Type:</div>
-    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Comfort</button>
-    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Sport</button>
-    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Racing</button>
-    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Wet</button>
-    <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Dirt</button>
+    <div>
+        <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Comfort</button>
+        <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Sport</button>
+        <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Racing</button>
+        <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Wet</button>
+        <button type="button" class="tire-type" onclick="selectOption(this, 'tire-type')">Dirt</button>
+    </div>
+
 
 
 
     <div>
-      <label for="fuelWear">Fuel Wear:</label>
+      <div><label for="fuelWear">Fuel Wear:</label></div>
     <input type="range" id="fuelWear" name="fuelWear" min="1" max="50" value="1" oninput="updateOutput(this.value, 'fuelWearOutput')">
     <span id="fuelWearOutput">1x</span><br>
 </div>
 <div>
-     <label for="tireWear">Tire Wear:</label>
+     <div><label for="tireWear">Tire Wear:</label></div>
     <input type="range" id="tireWear" name="tireWear" min="1" max="50" value="1" oninput="updateOutput(this.value, 'tireWearOutput')">
     <span id="tireWearOutput">1x</span><br> 
 </div>
